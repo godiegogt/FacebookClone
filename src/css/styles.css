@@ -235,7 +235,7 @@ height: 45px;
     color: black;
 }
 
-.publication-container{
+.publication{
     background-color: white;
     padding: 0.7rem;
     border-radius: 10px;
@@ -263,7 +263,7 @@ height: 45px;
     width: 90%;
 }
 
-.publication-container hr{
+.publication hr{
     margin: 0.5rem;
     height: 1px;
     color: #f0f0f0;
