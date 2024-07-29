@@ -56,13 +56,10 @@ header {
     display: inline-block;
     width: 60px;
     padding: 1rem;
-
-
 }
 
 .buttonItem:hover {
     background-color: #f0f0f0;
-
 }
 
 .buttonItem i {
@@ -236,4 +233,75 @@ height: 45px;
 
 #story-name {
     color: black;
+}
+
+.publication-container{
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+.publication__avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.publication__add-text{
+    display: inline-block;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    width: 90%;
+    padding: 0.7rem;
+}
+
+.publication__add-text input{
+    background-color: transparent;
+    border: 0px none transparent;
+    outline: none;
+    width: 90%;
+}
+
+.publication-container hr{
+    margin: 0.5rem;
+    height: 1px;
+    color: #f0f0f0;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.publication__button{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 6px;
+    text-align: center;
+}
+
+.publication__button:hover{
+    background-color: #f0f0f0;
+}
+
+.publication__button i{
+    font-size: 15px;
+}
+
+.publication__button p{
+    color: #8f8f8f;
+    font-size: 15px;
+    display: inline-block;
+}
+
+#publish-live_icon{
+    color: red;
+}
+
+#publish-visual_icon{
+    color: lightgreen;
+}
+
+#publish-reel_icon{
+    color: pink;
 }
