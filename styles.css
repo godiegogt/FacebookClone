@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 0;
+}
+
+header {
+    padding: 1rem;
+    position: relative;
+}
+
+.bars {
+    display: inline-block;
+
+}
+
+.fbIconContainer {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fbicon {
+    width: 40px;
+    height: 40px;
+}
+
+.searchBar {
+    display: inline-block;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    height: 50px;
+    padding: 1rem;
+}
+
+.searchBar i {
+    color: #a0a0a0;
+}
+
+.searchBar input {
+    background-color: transparent;
+    border: 0px none transparent;
+}
+
+.bars.menu {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttonItem {
+    display: inline-block;
+    width: 60px;
+    padding: 1rem;
+
+
+}
+
+.buttonItem:hover {
+    background-color: #f0f0f0;
+
+}
+
+.buttonItem i {
+    color: #a0a0a0;
+    ;
+}
+
+.navBarItem {
+    background-color: #f0f0f0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+}
+
+.navBarItem i {
+    vertical-align: middle;
+
+}
+
+.navBarItem .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarItem .notification p {
+
+    color: white;
+    font-weight: bold;
+    font-size: 0.5rem;
+    vertical-align: middle;
+    margin: 0px auto;
+}
+
+.navbar {
+    float: right;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+
+.container {
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    width: 30%;
+    display: inline-block;
+}
+
+.content {
+    width: 40%;
+    display: inline-block;
+}
+
+.content-item {
+    margin: 1rem;
+}
+
+.stories-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.story {
+    background-color: white;
+    width: 120px;
+    height: 230px;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.story__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.story__avatar {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0866ff;
+    position: absolute;
+    border-radius: 20px;
+    background-image: url('chuwaca.png');
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir completamente el div */
+    background-position: center;
+    /* Centra la imagen en el div */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    top: 10px;
+    left: 10px;
+}
+
+
+.story .story__user-name {
+    color: white;
+    font-weight: 600;
+    z-index: 5;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my-story {
+    width: 100%;
+}
+
+.story__add-story {
+    background-color: #0866ff;
+    width: 40px;
+    height: 40px;
+    border: 5px solid white;
+    position: relative;
+    margin: -25px 0;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+    
+
+
+}
+.story__add-story:hover {
+
+width: 45px;
+height: 45px;
+   
+
+}
+
+.story__add-story .add-story__text {
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+#story-name {
+    color: black;
+}
