@@ -506,3 +506,29 @@ height: 45px;
 .publication__footer i{
     color: #a0a0a0;
 }
+
+.sidebar__right{
+    padding-left: 5%;
+}
+
+.sidebar__social_header{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.sidebar__social_header h4{
+    color: #a0a0a0;
+}
+
+.sidebar__social_header div{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sidebar__social hr{
+    margin: 0.5rem 0px;
+    border: 0;
+    height: 1.5px;
+    background-color: #dedede;
+}
