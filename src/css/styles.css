@@ -532,3 +532,135 @@ height: 45px;
     height: 1.5px;
     background-color: #dedede;
 }
+
+.social__ads{
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.social__ads:hover{
+    background-color: #dbdbdb;
+}
+
+.social__ads > label{
+    visibility: hidden;
+}
+
+.social__ads:hover > label{
+    visibility: visible;
+}
+
+.social__ads:has(> label:hover){
+    background-color: transparent;
+}
+
+.social__ads:has(> .social__ads_options:hover){
+    background-color: transparent;
+}
+
+.social__ads_icon{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+}
+
+.social__ads_icon:hover{
+    background-color: #dbdbdb;
+}
+
+.social__ads_icon i{
+    font-size: 1.5rem;
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#options_add-1:checked ~ .social__ads_options{
+    height: 80%;
+    margin: 5px;
+    padding: 10px;
+}
+
+#options_add-2:checked ~ .social__ads_options{
+    height: 80%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.social__ads_options{
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.social__ads_options_items{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.social__ads_options_items:hover{
+    background-color: #dbdbdb;
+}
+
+.social__ads_options_icons{
+    border: black solid 2px;
+    padding: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.social__ads_options_icons i{
+    font-size: small;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__ads_options_text{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.social__ads_options_text > p{
+    font-size: 14px;
+}
+
+.social__ads_options_text > p ~ p{
+    font-size: 10px;
+    color: #a0a0a0;
+}
+
+.social__ads_image{
+    width: 100px;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+
+.social__ads_text{
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.social__ads_text a{
+    font-size: small;
+}
