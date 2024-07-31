@@ -121,7 +121,7 @@ header {
 
 .container {
     background-color: #f0f0f0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -135,13 +135,10 @@ header {
     display: inline-block;
 }
 
-.content-item {
-    margin: 1rem;
-}
-
 .stories-container {
     overflow: hidden;
     white-space: nowrap;
+    margin: 1rem;
 }
 
 .story {
@@ -235,11 +232,17 @@ height: 45px;
     color: black;
 }
 
-.publication{
+
+.content-item {
     background-color: white;
-    padding: 0.7rem;
     border-radius: 10px;
+    margin: 1rem;
 }
+
+.publication{
+    padding: 0.7rem;
+}
+
 
 .publication__avatar{
     width: 40px;
@@ -304,4 +307,85 @@ height: 45px;
 
 #publish-reel_icon{
     color: rgb(255, 132, 152);
+}
+
+.publication__header{
+    padding: 0.7rem;
+}
+
+.publication__header i{
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publication__header-container{
+    vertical-align: middle;
+    width: 72%;
+}
+
+.publication__header > div{
+    display: inline-block;
+}
+
+#publication__user-name{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#publication__time{
+    font-size: 10px;
+}
+
+.publication__option{
+    border-radius: 50%;
+    margin-left: 1px;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+}
+.publication__option:hover{
+    background-color: #f0f0f0;
+}
+
+.publication__body{
+    padding: 0.7rem;
+}
+
+.publication__image{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.publication__footer{
+    padding: 0.7rem;
+    position: relative;
+    width: 100%;
+}
+
+.publication__footer-reactions{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.publication__footer-information{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.publication__footer hr{
+    margin: 0.5rem;
+    height: 1px;
+    color: #f0f0f0;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.publication__footer i{
+    color: #a0a0a0;
 }
