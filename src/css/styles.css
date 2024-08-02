@@ -532,3 +532,64 @@ height: 45px;
     height: 1.5px;
     background-color: #dedede;
 }
+
+.social_friendsRequest_image{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.social_friendsRequest_comonFriends{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.social_friendsRequest_request{
+    display: inline-block;
+    width: 72%;
+}
+
+
+.sidebar__social_image-text div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.social_friendsRequest_acceptFriend{
+    border-color: #0866ff;
+    margin: 20px;
+}
+
+.sidebar__social_button-Confirm{
+    background-color: #0866ff;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    color: floralwhite;
+    padding: 10px;
+    width: 90px;
+
+}
+
+.sidebar__social_button-delet{
+    width: 90px;
+    background-color: #8f8f8f;
+    border-radius: 10px;
+    color:rgb(59, 59, 58);
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.social_friendsRequest_request-name{
+    margin-left: 5px;
+    font-weight: bold; 
+    font-size: 18px;
+}
