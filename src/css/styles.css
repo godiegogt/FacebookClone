@@ -4,6 +4,33 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+/* styles.css */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px; /* Set a base font size */
+    line-height: 1.5; /* Set a base line height */
+    color: #333; /* Set a base text color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold; /* Set font weight for headings */
+  }
+  
+  p {
+    margin-bottom: 1em; /* Set space below paragraphs */
+  }
+
+header{
+  
+    -webkit-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);  
+    
+}
 
 .header-top{
     padding:0 1rem 0 1rem ;
@@ -35,10 +62,16 @@
 }
 
 .header-bottom{
-    padding: 1rem;
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0px;
+    height: 4rem;
+}
+
+.header-left{
+margin: 0.5rem 1rem;
 }
 
 .fbIconContainer {
@@ -54,9 +87,10 @@
 .searchBar {
     display: inline-block;
     background-color: #f0f0f0;
-    border-radius: 20px;
-    height: 50px;
+    border-radius: 1.5rem;
+    height: 3rem;
     padding: 1rem;
+    width: 16rem;
 }
 
 .searchBar i {
@@ -77,9 +111,12 @@
 
 .buttonItem {
     width: 80px;
-    padding: 1rem;
     cursor: pointer;
     text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -160,7 +197,8 @@ display: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+    margin-right: 1rem;
+}   
 
 .navBarMore{
     background-color: #f0f0f0;
@@ -185,7 +223,6 @@ display: none;
 
 .container {
     background-color: #f0f0f0;
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -193,7 +230,6 @@ display: none;
 
 .sidebar {
     flex:1;
-    display: inline-block;
     height: 100%;
     flex-shrink: 0; /* Evitar que el sidebar se reduzca */
     padding: 1rem;
@@ -290,14 +326,16 @@ transition: height 0.3s;
 }
 
 .content {
-    flex:1;
-    display: inline-block;
+    width: 40%;
+    
 }
 
 .stories-container {
     overflow: hidden;
     white-space: nowrap;
     margin: 1rem;
+   max-width: 100%;
+    position: relative;
 }
 
 .story {
@@ -390,6 +428,31 @@ height: 45px;
 #story-name {
     color: black;
 }
+
+.look-nextstories{
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .1s;
+
+}
+
+.look-nextstories:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
 
 
 .content-item {
@@ -1373,6 +1436,9 @@ input:checked + .slider:before {
 }
 
 @media(max-width:1200px){
+    .sidebar-left{
+        display: none;
+    }
     .searchBar{
         width: 50px;
         border-radius: 50%;
@@ -1380,9 +1446,28 @@ input:checked + .slider:before {
     .searchBar input{
         display: none;
     }
+    .content{
+        max-width: 70%;
+    }
+
+    .sidebar-right{
+        max-width: 30%;
+    }
 }
 
 @media(max-width:900px){
+    .content-item{
+        margin: 1rem 0rem;
+    }
+    .stories-container{
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 1rem 0rem;
+       
+    }
+    .sidebar-right{
+        display: none;
+    }
     .navbar{
         display: none;
     }
@@ -1398,7 +1483,7 @@ input:checked + .slider:before {
     .header-bottom{
         padding-top: 0;
     }
-    .left{
+    .header-left{
         display: none;
     }
     .navBarMore{display: none;}
