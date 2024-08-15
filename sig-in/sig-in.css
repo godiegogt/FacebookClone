@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.login__count-text img{
+    width: 170px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.content__sig-in h3{
+    font-size: 30px;
+    color: rgb(48, 48, 48);
+   
+}
+
+.content__sig-in p{
+    color: slategray;
+}
+
+/*perfiles*/
+.sig-in__users{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+
+.users__login p{
+    font-weight: 600;
+    z-index: 5;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sig-in__profiles{
+    background-color: white;
+    width: 160px;
+    height: 220px;
+    margin: 0 5px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.icon_delete-User{
+    background: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: 10px;
+}
+
+
+.sig-in__profiles img{
+    width: 160px;
+    height: 160px;
+}
+
+.icon_addUser{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0866ff;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top:40%;
+    position: relative;
+}
+
+.icon_addUser i{
+    color: #fff;
+    font-size: 24px;
+}
+
+.add_count_profile{
+  width: 100%;   
+}
+
+.users__login-add {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+}
+
+.sig-in__profiles_add {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    width: 160px; 
+    height: 220px; 
+}
+
+
+
+/* informacion de usuario y logiarse*/
+
+.info__log-in{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
+    margin: auto; 
+    background-color: white; 
+    border-radius: 10px; 
+    margin: 60px;
+}
+
+.info__log-in input {
+    width: 365px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #9a9a9a;
+    
+}
+
+.info__log-in input:focus{
+    border-color: blue;
+    outline: none;
+}
+
+
+.info__log-in button {
+    width: 365;
+    height: 50px;
+    margin: 20px;
+    background-color: #0866ff;
+    border-radius: 10px;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    
+}
+
+.info__log-in-password{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+
+}
+
+.info__log-in-reset-password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info__log-in-reset-password a{
+    color: blue; 
+    
+}
+
+.info__log-in hr {
+    width: 90%;
+    margin: 10px;
+}
+
+.info__log-in-create-count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__log-in-create-count button{
+    background-color: #42b72a;
+    color: #fff;
+    height: 48px;
+    width: 190px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+@media(max-width:900px){
+
+}
+
