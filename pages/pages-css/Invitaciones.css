@@ -1,0 +1,90 @@
+.content__pages_invitations{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+/*texto de la pagina*/
+.invitations__content-acept-head{
+    margin: 20px;
+}
+
+.invitations__content-text{
+    width: 700px;
+    
+}
+
+
+/*perfiles de paginas para seguir*/
+.invitations__content-acept{
+    height: auto;
+    width: 680px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin: 10px;
+   
+}
+
+.invitations__content-acept-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitations__content-acept-info-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 15px;
+}
+.invitations__content-acept-info-text{
+    margin: 15px  150px 5px 5px;
+}
+
+.invitations__content-acept-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.invitations__content-acept-info-text-people{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+   
+}
+
+.invitations__content-acept-info-text-people img{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.invitations__content-acept-info-text-people p {
+    margin: 0 5px;
+    font-size: 15px;
+
+}
+
+.invitations__content-acept-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invitations__content-acept-bigButton{
+    width: 592px;
+    height: 36px;
+    background-color: #0866ff ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitations__content-acept-bigButton p{
+    margin: 0 5px;
+    color: #fff;
+}
+

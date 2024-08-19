@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="pages-styles.css">
+    <link rel="stylesheet" href="/pages/pages-css/pages-styles.css">
     <link rel="icon" href="/src/img/fbicon.png" type="image/icon type">
     <title>Facebook | Pages</title>
 </head>
@@ -94,100 +94,215 @@
         </div>
     </div>
 </header>
-<!---->
-<div class="container">
-    <div class="pages__sidebar">
-        <div class="sidebar__header">
-            <h1>Página</h1>
-            <input type="checkbox" id="see-sidebar-config" name="see-sidebar-config">
-            <label for="see-sidebar-config">
-                <div><i class="fa-solid fa-gear"></i></div>
-            </label>
-        </div>
-        <div class="sidebar__config">
-            <div class="sidebar__config-text">
-                <h3>Configuración de notificaciones </h3>
-                <p>puedes administrar cómo recibes las notificaciones sobre laas novedades de páginas</p>
+<body>
+    <div class="container">
+        <div class="pages__sidebar">
+            <div class="sidebar__header">
+                <h1>Página</h1>
+                <input type="checkbox" id="see-sidebar-config" name="see-sidebar-config">
+                <label for="see-sidebar-config">
+                    <div><i class="fa-solid fa-gear"></i></div>
+                </label>
+            </div>
+    
+            <div class="sidebar__config">
+                <div class="sidebar__config-text">
+                    <h3>Configuración de notificaciones </h3>
+                    <p>puedes administrar cómo recibes las notificaciones sobre laas novedades de páginas</p>
+                </div>
+                <hr></hr>
+                <div class="sidebar__config-options">
+                    <div class="sidebar__config-options-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-240h640v-320H520v-160H160v480Zm0 80q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80v-480 480Z"/></svg>
+                    </div>
+                    <p>
+                        Mostrar puntos de notificaciones
+                    </p>
+                    <input type="checkbox" id="swich_sidebar__config" name="swich" checked>
+                    <label for="swich_sidebar__config">
+                        <div class="sidebar__config-options-swich">
+                            <span class="sidebar__config-options-swich-slider"></span>
+                        </div>
+    
+                    </label>
+                    
+                </div>
+            </div>
+            <div class="sidebar__button">
+                <i class="fa-solid fa-plus"></i>
+                <p>Crear nuevo perfil o página</p>
             </div>
             <hr></hr>
-            <div class="sidebar__config-options">
-                <div class="sidebar__config-options-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-240h640v-320H520v-160H160v480Zm0 80q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80v-480 480Z"/></svg>
+            <input type="radio" id="view-1" name="view-input" >
+            <label for="view-1">
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h2>Meta Business Suite</h2>
                 </div>
-                <p>
-                    Mostrar puntos de notificaciones
-                </p>
-                <input type="checkbox" id="swich_sidebar__config" name="swich" checked>
-                <label for="swich_sidebar__config">
-                    <div class="sidebar__config-options-swich">
-                        <span class="sidebar__config-options-swich-slider"></span>
+            </label>
+            <input type="radio" id="view-2" name="view-input" checked>
+            <label for="view-2" onclick="location.href='/pages/pages_Index.html';">
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h2>Descubrir</h2>
+                </div>
+            </label>
+            <input type="radio" id="view-3" name="view-input">
+            <label for="view-3"   onclick="location.href='/pages/pages_like.html';"> 
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <h2>Páginas que te gustan</h2>
+                </div>
+            </label>
+            <input type="radio" id="view-4" name="view-input">
+            <label for="view-4" onclick="location.href='/pages/pages_invitaciones.html';">
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <h2>Invitaciones</h2>
+                </div>
+            </label>
+           
+        </div>
+        <div class="content">
+            <div class="content__discover">
+                <div class="content__discover-text">
+                    <h3>Descubrir páginas </h1>
+                </div>
+                <div class="content__discover-text">
+                    <h3>Sugerencias para ti</h1>
+                </div>
+
+                <div class="content__discover-pages">
+                    <div class="discover-pages">
+                        <div class="discover-pages-img">
+                            <img src="/pages/img-pages/perfil-foto.jpg" alt="pequeño-perfel">
+                        </div>
+                        <div class="discover-pages-img-perfil">
+                            <img src="/pages/img-pages/User-pages.jpg" alt="grande-perfil">
+                            <div class="discover-pages-info-user">
+                                <h2>Lord vader</h2>
+                                <p>Deportista</p>
+                                <p>A 49,3 mil personas les gusta esta pagina</p>
+                            </div>
+                        </div >
+                        <div class="content__discover-button">
+                            <button> 
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Me gusta</p>
+                            </button>
+                        </div>   
                     </div>
 
-                </label>
-                
+                    <div class="discover-pages">
+                        <div class="discover-pages-img">
+                            <img src="/pages/img-pages/perfil-foto.jpg" alt="pequeño-perfel">
+                        </div>
+                        <div class="discover-pages-img-perfil">
+                            <img src="/pages/img-pages/User-pages.jpg" alt="grande-perfil">
+                            <div class="discover-pages-info-user">
+                                <h2>Lord vader</h2>
+                                <p>Deportista</p>
+                                <p>A 49,3 mil personas les gusta esta pagina</p>
+                            </div>
+                        </div >
+                        <div class="content__discover-button">
+                            <button> 
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Me gusta</p>
+                            </button>
+                        </div>   
+                    </div>
+
+                    <div class="discover-pages">
+                        <div class="discover-pages-img">
+                            <img src="/pages/img-pages/perfil-foto.jpg" alt="pequeño-perfel">
+                        </div>
+                        <div class="discover-pages-img-perfil">
+                            <img src="/pages/img-pages/User-pages.jpg" alt="grande-perfil">
+                            <div class="discover-pages-info-user">
+                                <h2>Lord vader</h2>
+                                <p>Deportista</p>
+                                <p>A 49,3 mil personas les gusta esta pagina</p>
+                            </div>
+                        </div >
+                        <div class="content__discover-button">
+                            <button> 
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Me gusta</p>
+                            </button>
+                        </div>   
+                    </div>
+
+                    <div class="discover-pages">
+                        <div class="discover-pages-img">
+                            <img src="/pages/img-pages/perfil-foto.jpg" alt="pequeño-perfel">
+                        </div>
+                        <div class="discover-pages-img-perfil">
+                            <img src="/pages/img-pages/User-pages.jpg" alt="grande-perfil">
+                            <div class="discover-pages-info-user">
+                                <h2>Lord vader</h2>
+                                <p>Deportista</p>
+                                <p>A 49,3 mil personas les gusta esta pagina</p>
+                            </div>
+                        </div >
+                        <div class="content__discover-button">
+                            <button> 
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Me gusta</p>
+                            </button>
+                        </div>   
+                    </div>
+
+                    <div class="discover-pages">
+                        <div class="discover-pages-img">
+                            <img src="/pages/img-pages/perfil-foto.jpg" alt="pequeño-perfel">
+                        </div>
+                        <div class="discover-pages-img-perfil">
+                            <img src="/pages/img-pages/User-pages.jpg" alt="grande-perfil">
+                            <div class="discover-pages-info-user">
+                                <h2>Lord vader</h2>
+                                <p>Deportista</p>
+                                <p>A 49,3 mil personas les gusta esta pagina</p>
+                            </div>
+                        </div >
+                        <div class="content__discover-button">
+                            <button> 
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Me gusta</p>
+                            </button>
+                        </div>   
+                    </div>
+
+                    <div class="discover-pages">
+                        <div class="discover-pages-img">
+                            <img src="/pages/img-pages/perfil-foto.jpg" alt="pequeño-perfel">
+                        </div>
+                        <div class="discover-pages-img-perfil">
+                            <img src="/pages/img-pages/User-pages.jpg" alt="grande-perfil">
+                            <div class="discover-pages-info-user">
+                                <h2>Lord vader</h2>
+                                <p>Deportista</p>
+                                <p>A 49,3 mil personas les gusta esta pagina</p>
+                            </div>
+                        </div >
+                        <div class="content__discover-button">
+                            <button> 
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Me gusta</p>
+                            </button>
+                        </div>   
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="sidebar__button">
-            <i class="fa-solid fa-plus"></i>
-            <p>Crear nuevo perfil o página</p>
-        </div>
-        <hr></hr>
-        <input type="radio" id="view-1" name="view-input" checked>
-        <label for="view-1">
-            <div class="sidebar__views">
-                <div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <h2>diferentes vistas</h2>
-            </div>
-        </label>
-        <input type="radio" id="view-2" name="view-input">
-        <label for="view-2">
-            <div class="sidebar__views">
-                <div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <h2>diferentes vistas</h2>
-            </div>
-        </label>
-        <input type="radio" id="view-3" name="view-input">
-        <label for="view-3">
-            <div class="sidebar__views">
-                <div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <h2>diferentes vistas</h2>
-            </div>
-        </label>
-        <input type="radio" id="view-4" name="view-input">
-        <label for="view-4">
-            <div class="sidebar__views">
-                <div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <h2>diferentes vistas</h2>
-            </div>
-        </label>
-        <input type="radio" id="view-5" name="view-input">
-        <label for="view-5">
-            <div class="sidebar__views">
-                <div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <h2>diferentes vistas</h2>
-            </div>
-        </label>
     </div>
-    <div class="content">
-
-    </div>
-</div>
-
-
-
-
-
-<body>
-    
 </body>
 </html>

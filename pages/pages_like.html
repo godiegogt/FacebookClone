@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/pages/pages-css/pages-styles.css">
+    <link rel="stylesheet" href="/pages/pages-css/Paginas-like.css">
+    <link rel="icon" href="/src/img/fbicon.png" type="image/icon type">
+    <title>Facebook | Pages | Descubrir</title>
+</head>
+<header>
+    <div class="header-top">
+        <img src="/src/img/Facebook-Logo-768x432.png" alt="FACEBOOK">
+        <div>
+            <div class="header-top-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-top-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="header-left">
+            <div class="fbIconContainer">
+                <img class="fbicon" src="/src/img/fbicon.png" />
+            </div>
+            <div class="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Buscar en Facebook" />
+            </div>
+        </div>
+        <div class="menu">
+            
+            <input type="radio" id="menu-item-home" name="menu-radioinput">
+            <label for="menu-item-home" onclick="location.href='/index.html';">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+            </label>
+            
+            <input type="radio" id="menu-item-pages" name="menu-radioinput" checked>
+            <label for="menu-item-pages">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-flag"></i>
+                </div>
+            </label>
+            <input type="radio" id="menu-item-videos" name="menu-radioinput">
+            <label for="menu-item-videos" class="menu-input">
+
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+
+            </label>
+            <input type="radio" id="menu-item-store" name="menu-radioinput">
+            <label for="menu-item-store" class="menu-input">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+            </label>
+            <input type="radio" id="menu-item-games" name="menu-radioinput">
+            <label for="menu-item-games" class="menu-input">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+
+            </label>
+
+        </div>
+        <div class="navbar">
+            <div class="navBarItem">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e8eaed">
+                    <path
+                        d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z" />
+                </svg>
+            </div>
+            <div class="navBarItem">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <div class="notification">
+                    <p>2</p>
+                </div>
+            </div>
+            <div class="navBarItem">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <img class="avatar" src="/src/img/chuwaca.png" alt="FOto de perfil.">
+        </div>
+        <div class="navBarMore">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="pages__sidebar">
+            <div class="sidebar__header">
+                <h1>Página</h1>
+                
+                <label for="see-sidebar-config">
+                    <div><i class="fa-solid fa-gear"></i></div>
+                </label>
+            </div>
+    
+            <div class="sidebar__config">
+                <div class="sidebar__config-text">
+                    <h3>Configuración de notificaciones </h3>
+                    <p>puedes administrar cómo recibes las notificaciones sobre laas novedades de páginas</p>
+                </div>
+                <hr></hr>
+                <div class="sidebar__config-options">
+                    <div class="sidebar__config-options-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-240h640v-320H520v-160H160v480Zm0 80q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80v-480 480Z"/></svg>
+                    </div>
+                    <p>
+                        Mostrar puntos de notificaciones
+                    </p>
+                    
+                    <label for="swich_sidebar__config">
+                        <div class="sidebar__config-options-swich">
+                            <span class="sidebar__config-options-swich-slider"></span>
+                        </div>
+    
+                    </label>
+                    
+                </div>
+            </div>
+            <div class="sidebar__button">
+                <i class="fa-solid fa-plus"></i>
+                <p>Crear nuevo perfil o página</p>
+            </div>
+            <hr></hr>
+            <input type="radio" id="view-1" name="view-input" >
+            <label for="view-1">
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h2>Meta Business Suite</h2>
+                </div>
+            </label>
+
+            <input type="radio" id="view-2" name="view-input" >
+            <label for="view-2" onclick="location.href='/pages/pages_Index.html';"> 
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h2>Descubrir</h2>
+                </div>
+            </label>
+
+            <input type="radio" id="view-3" name="view-input" checked>
+            <label for="view-3">
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <h2>Páginas que te gustan</h2>
+                </div>
+            </label>
+
+            <input type="radio" id="view-4" name="view-input">
+            <label for="view-4" onclick="location.href='/pages/pages_invitaciones.html';">
+                <div class="sidebar__views">
+                    <div>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <h2>Invitaciones</h2>
+                </div>
+            </label>
+           
+        </div>
+        
+        <div class="content_likepages">
+            <div class="content__discover"> 
+                <div class="pages__like-changes">
+
+                    <div class="pages__like-changes-text">
+                        <h3>Cambios en las páginas</h3>
+                        <p>Estas páginas cambiaron su nombre desde que indicaste que te gustan. Cuando una página hace cambios como este, a veces significa que también cambia los temas sobre los que publica. Puedes decidir si quieres mantener la conexión con estas páginas.</p>
+                    </div>
+                    
+                    <div class="pages__like-changes-pages">
+                        <div class="pages__like-pages-changes">
+                                <img src="/pages/img-pages/yoda.png" alt="yoda">
+                            <div class="pages__like-pages-changes-text">
+                                <h4>Memes Yoda</h4>
+                                <span>Jedi Training</span>
+                                <p>Nombre anteriror:El Lado Meme de la Fuerza</p>
+                            </div>
+                            <input type="checkbox" id="swich-invitaciones__header" name="swich2">
+                            <label for="swich-invitaciones__header">
+                                <div class="pages__like-pages-changes-icon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </label>
+                            <div class="invitaciones__header">
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M709.23-140H288.46v-480l265.39-263.84L587.69-850q6.23 6.23 10.35 16.5 4.11 10.27 4.11 19.35V-804l-42.46 184h268q28.54 0 50.42 21.89Q900-576.23 900-547.69v64.61q0 6.23-1.62 13.46-1.61 7.23-3.61 13.47L780.15-185.69q-8.61 19.23-28.84 32.46T709.23-140Zm-360.77-60h360.77q4.23 0 8.65-2.31 4.43-2.31 6.74-7.69L840-480v-67.69q0-5.39-3.46-8.85t-8.85-3.46H483.85L534-779.23 348.46-594.46V-200Zm0-394.46V-200v-394.46Zm-60-25.54v60H160v360h128.46v60H100v-480h188.46Z"/></svg>
+                                    <div><p>Te gusta</p></div>    
+                                </div>
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M212.31-140q-29.92 0-51.12-21.19Q140-182.39 140-212.31v-535.38q0-29.92 21.19-51.12Q182.39-820 212.31-820h535.38q9.16 0 17.31 2.27 8.15 2.27 15.54 6.81l-53.62 53.61q-1.15-1.15-2.88-1.92T720-760H212.31q-5.39 0-8.85 3.46t-3.46 8.85v535.38q0 5.39 3.46 8.85t8.85 3.46h535.38q5.39 0 8.85-3.46t3.46-8.85v-267.92l60-60v327.92q0 29.92-21.19 51.12Q777.61-140 747.69-140H212.31ZM461-294.23 256.92-498.31l42.16-42.15 162.3 162.31 359.31-359.31 42.39 41.15L461-294.23Z"/></svg>
+                                    <div><p>Configuración de seguimiento</p></div>    
+                                </div>
+                        
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M220-150v-597.69Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31V-150L480-261.54 220-150Zm60-92 200-86 200 86v-505.69q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H292.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46V-242Zm0-518h400-400Z"/></svg>
+                                    <div><p>Guardar</p></div>    
+                                </div>
+                        
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m598.85-220-42.16-42.39 148.39-146.84H306.54q-69.23 0-117.88-48.08Q140-505.38 140-574.61q0-69.24 48.66-117.31Q237.31-740 306.54-740h19.23v60h-19.23q-44.31 0-75.42 30.54Q200-618.92 200-574.61q0 44.3 31.12 74.84 31.11 30.54 75.42 30.54h398.54L556.69-617.08l42.16-41.76L820-439.23 598.85-220Z"/></svg>
+                                    <div><p>Compartir</p></div>    
+                                </div>
+                        
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-200h50.46l409.46-409.46-50.46-50.46L200-250.46V-200Zm-60 60v-135.38l527.62-527.39q9.07-8.24 20.03-12.73 10.97-4.5 23-4.5t23.3 4.27q11.28 4.27 19.97 13.58l48.85 49.46q9.31 8.69 13.27 20 3.96 11.31 3.96 22.62 0 12.07-4.12 23.03-4.12 10.97-13.11 20.04L275.38-140H140Zm620.38-570.15-50.23-50.23 50.23 50.23Zm-126.13 75.9-24.79-25.67 50.46 50.46-25.67-24.79Z"/></svg>
+                                    <div><p>Sugerir cambios</p></div>    
+                                </div>
+                        
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M563.85-516.15h272.3v-192.31h-272.3v192.31ZM700-563.85l-99.23-69.23v-37.69L700-601.54l99.23-69.23v37.69L700-563.85ZM92.31-147.69q-30.31 0-51.31-21-21-21-21-51.31v-520q0-30.31 21-51.31 21-21 51.31-21h775.38q30.31 0 51.31 21 21 21 21 51.31v520q0 30.31-21 51.31-21 21-51.31 21H92.31Zm521.38-60h254q4.62 0 8.46-3.85Q880-215.39 880-220v-520q0-4.61-3.85-8.46-3.84-3.85-8.46-3.85H92.31q-4.62 0-8.46 3.85Q80-744.61 80-740v520q0 4.61 3.85 8.46 3.84 3.85 8.46 3.85h14q42-64.62 109.08-102.31 67.07-37.69 144.61-37.69 77.54 0 144.61 37.69 67.08 37.69 109.08 102.31ZM360-395.38q45.77 0 77.88-32.12Q470-459.61 470-505.38q0-45.77-32.12-77.89-32.11-32.11-77.88-32.11-45.77 0-77.88 32.11Q250-551.15 250-505.38t32.12 77.88q32.11 32.12 77.88 32.12ZM182-207.69h356q-34.38-38-80.69-59-46.31-21-97.31-21t-97 21q-46 21-81 59Zm178-247.69q-20.85 0-35.42-14.58Q310-484.54 310-505.38q0-20.85 14.58-35.43 14.57-14.57 35.42-14.57t35.42 14.57Q410-526.23 410-505.38q0 20.84-14.58 35.42-14.57 14.58-35.42 14.58ZM480-480Z"/></svg>
+                                    <div><p>Invitar a amigos</p></div>    
+                                </div>
+                        
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-291.54q13.73 0 23.02-9.29t9.29-23.02q0-13.73-9.29-23.02-9.29-9.28-23.02-9.28t-23.02 9.28q-9.29 9.29-9.29 23.02t9.29 23.02q9.29 9.29 23.02 9.29Zm-30-139.23h60v-241.54h-60v241.54ZM338.46-140 140-338.28v-283.26L338.28-820h283.26L820-621.72v283.26L621.72-140H338.46ZM364-200h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"/></svg>
+                                    <div><p>Bloquear página</p></div>    
+                                </div>
+                        
+                                <div class="pages__follow-like-options-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m376-414.23 104-103.62 104 103.62L625.77-456 522.15-560l103.62-104L584-705.77 480-602.15 376-705.77 334.23-664l103.62 104-103.62 104L376-414.23ZM100-118.46v-669.23Q100-818 121-839q21-21 51.31-21h615.38Q818-860 839-839q21 21 21 51.31v455.38Q860-302 839-281q-21 21-51.31 21H241.54L100-118.46ZM216-320h571.69q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H172.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v523.08L216-320Zm-56 0v-480 480Z"/></svg>
+                                    <div><p>Reportar página</p></div>    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pages__like-pages-changes">
+                            <img src="/pages/img-pages/yoda.png" alt="yoda">
+                        <div class="pages__like-pages-changes-text">
+                            <h4>Memes Yoda</h4>
+                            <span>Jedi Training</span>
+                            <p>Nombre anteriror:El Lado Meme de la Fuerza</p>
+                        </div>
+                        <input type="checkbox" id="swich-invitaciones__header" name="swich2">
+                        <label for="swich-invitaciones__header">
+                            <div class="pages__like-pages-changes-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </label>
+                        <div class="invitaciones__header">
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M709.23-140H288.46v-480l265.39-263.84L587.69-850q6.23 6.23 10.35 16.5 4.11 10.27 4.11 19.35V-804l-42.46 184h268q28.54 0 50.42 21.89Q900-576.23 900-547.69v64.61q0 6.23-1.62 13.46-1.61 7.23-3.61 13.47L780.15-185.69q-8.61 19.23-28.84 32.46T709.23-140Zm-360.77-60h360.77q4.23 0 8.65-2.31 4.43-2.31 6.74-7.69L840-480v-67.69q0-5.39-3.46-8.85t-8.85-3.46H483.85L534-779.23 348.46-594.46V-200Zm0-394.46V-200v-394.46Zm-60-25.54v60H160v360h128.46v60H100v-480h188.46Z"/></svg>
+                                <div><p>Te gusta</p></div>    
+                            </div>
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M212.31-140q-29.92 0-51.12-21.19Q140-182.39 140-212.31v-535.38q0-29.92 21.19-51.12Q182.39-820 212.31-820h535.38q9.16 0 17.31 2.27 8.15 2.27 15.54 6.81l-53.62 53.61q-1.15-1.15-2.88-1.92T720-760H212.31q-5.39 0-8.85 3.46t-3.46 8.85v535.38q0 5.39 3.46 8.85t8.85 3.46h535.38q5.39 0 8.85-3.46t3.46-8.85v-267.92l60-60v327.92q0 29.92-21.19 51.12Q777.61-140 747.69-140H212.31ZM461-294.23 256.92-498.31l42.16-42.15 162.3 162.31 359.31-359.31 42.39 41.15L461-294.23Z"/></svg>
+                                <div><p>Configuración de seguimiento</p></div>    
+                            </div>
+                    
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M220-150v-597.69Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31V-150L480-261.54 220-150Zm60-92 200-86 200 86v-505.69q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H292.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46V-242Zm0-518h400-400Z"/></svg>
+                                <div><p>Guardar</p></div>    
+                            </div>
+                    
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m598.85-220-42.16-42.39 148.39-146.84H306.54q-69.23 0-117.88-48.08Q140-505.38 140-574.61q0-69.24 48.66-117.31Q237.31-740 306.54-740h19.23v60h-19.23q-44.31 0-75.42 30.54Q200-618.92 200-574.61q0 44.3 31.12 74.84 31.11 30.54 75.42 30.54h398.54L556.69-617.08l42.16-41.76L820-439.23 598.85-220Z"/></svg>
+                                <div><p>Compartir</p></div>    
+                            </div>
+                    
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-200h50.46l409.46-409.46-50.46-50.46L200-250.46V-200Zm-60 60v-135.38l527.62-527.39q9.07-8.24 20.03-12.73 10.97-4.5 23-4.5t23.3 4.27q11.28 4.27 19.97 13.58l48.85 49.46q9.31 8.69 13.27 20 3.96 11.31 3.96 22.62 0 12.07-4.12 23.03-4.12 10.97-13.11 20.04L275.38-140H140Zm620.38-570.15-50.23-50.23 50.23 50.23Zm-126.13 75.9-24.79-25.67 50.46 50.46-25.67-24.79Z"/></svg>
+                                <div><p>Sugerir cambios</p></div>    
+                            </div>
+                    
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M563.85-516.15h272.3v-192.31h-272.3v192.31ZM700-563.85l-99.23-69.23v-37.69L700-601.54l99.23-69.23v37.69L700-563.85ZM92.31-147.69q-30.31 0-51.31-21-21-21-21-51.31v-520q0-30.31 21-51.31 21-21 51.31-21h775.38q30.31 0 51.31 21 21 21 21 51.31v520q0 30.31-21 51.31-21 21-51.31 21H92.31Zm521.38-60h254q4.62 0 8.46-3.85Q880-215.39 880-220v-520q0-4.61-3.85-8.46-3.84-3.85-8.46-3.85H92.31q-4.62 0-8.46 3.85Q80-744.61 80-740v520q0 4.61 3.85 8.46 3.84 3.85 8.46 3.85h14q42-64.62 109.08-102.31 67.07-37.69 144.61-37.69 77.54 0 144.61 37.69 67.08 37.69 109.08 102.31ZM360-395.38q45.77 0 77.88-32.12Q470-459.61 470-505.38q0-45.77-32.12-77.89-32.11-32.11-77.88-32.11-45.77 0-77.88 32.11Q250-551.15 250-505.38t32.12 77.88q32.11 32.12 77.88 32.12ZM182-207.69h356q-34.38-38-80.69-59-46.31-21-97.31-21t-97 21q-46 21-81 59Zm178-247.69q-20.85 0-35.42-14.58Q310-484.54 310-505.38q0-20.85 14.58-35.43 14.57-14.57 35.42-14.57t35.42 14.57Q410-526.23 410-505.38q0 20.84-14.58 35.42-14.57 14.58-35.42 14.58ZM480-480Z"/></svg>
+                                <div><p>Invitar a amigos</p></div>    
+                            </div>
+                    
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-291.54q13.73 0 23.02-9.29t9.29-23.02q0-13.73-9.29-23.02-9.29-9.28-23.02-9.28t-23.02 9.28q-9.29 9.29-9.29 23.02t9.29 23.02q9.29 9.29 23.02 9.29Zm-30-139.23h60v-241.54h-60v241.54ZM338.46-140 140-338.28v-283.26L338.28-820h283.26L820-621.72v283.26L621.72-140H338.46ZM364-200h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"/></svg>
+                                <div><p>Bloquear página</p></div>    
+                            </div>
+                    
+                            <div class="pages__follow-like-options-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m376-414.23 104-103.62 104 103.62L625.77-456 522.15-560l103.62-104L584-705.77 480-602.15 376-705.77 334.23-664l103.62 104-103.62 104L376-414.23ZM100-118.46v-669.23Q100-818 121-839q21-21 51.31-21h615.38Q818-860 839-839q21 21 21 51.31v455.38Q860-302 839-281q-21 21-51.31 21H241.54L100-118.46ZM216-320h571.69q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H172.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v523.08L216-320Zm-56 0v-480 480Z"/></svg>
+                                <div><p>Reportar página</p></div>    
+                            </div>
+                        </div>
+
+                    </div>
+    
+                        
+                    </div>
+
+                    <label for="pages__like-changes-more-perfil">
+                        <div class="pages__like-changes-more-perfil-button">
+                            <div>
+                                <p>Ver todas (48) </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z"/></svg>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="pages__follow">
+                <div class="pages__follow-head">
+                    <div>
+                        <h3>Todas las páginas que te gustan o que sigues</h3>
+                    </div>
+
+                    <input type="checkbox" id="swich3_order__pages-like" name="swich3">
+                    <label for="swich3_order__pages-like">
+                        
+                        <div>
+                          <span>Ordenar</span>
+                        </div>
+                    </label>
+                    <div class="order__pages-like-config">
+                        <div class="order__pages-like-config-content">
+                            <p>Predeterminado</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6f99fb"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                        </div>
+                        <div class="order__pages-like-config-content">
+                            <p>Me gusta más recientes primero</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6f99fb"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                        </div>
+                        <div class="order__pages-like-config-content">
+                            <p>Me gusta más akntiguos primero</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6f99fb"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pages__follow-body">
+
+                    <div class="pages__follow-like">
+                        <div class="pages__follow-like-info">
+                            <img src="/pages/img-pages/ParanormalGT.jpg" alt="GT">
+                            <div class="pages__follow-like-text">
+                                <h4>Paranormal GT</h4>
+                                <span>Blog personal</span>
+                            </div>
+                            <div class="pages__like-pages-changes-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        
+                        <label for="swich-invitaciones__header">
+                            
+                            <div class="pages__follow-like-button">
+                                <div>
+                                    <p>Enviar mensaje</p>
+                                </div>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
+                            
+                        </label>
+                    </div>
+                    
+                    
+
+                    <div class="pages__follow-like">
+                        <div class="pages__follow-like-info">
+                            <img src="/pages/img-pages/ParanormalGT.jpg" alt="GT">
+                            <div class="pages__follow-like-text">
+                                <h4>Paranormal GT</h4>
+                                <span>Blog personal</span>
+                            </div>
+                            <div class="pages__like-pages-changes-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        
+                        <label for="a">
+                            <div class="pages__follow-like-button">
+                                <div>
+                                    <p>Enviar mensaje</p>
+                                </div>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="pages__follow-like">
+                        <div class="pages__follow-like-info">
+                            <img src="/pages/img-pages/ParanormalGT.jpg" alt="GT">
+                            <div class="pages__follow-like-text">
+                                <h4>Paranormal GT</h4>
+                                <span>Blog personal</span>
+                            </div>
+                            <div class="pages__like-pages-changes-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        
+                        <label for="a">
+                            <div class="pages__follow-like-button">
+                                <div>
+                                    <p>Enviar mensaje</p>
+                                </div>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="pages__follow-like">
+                        <div class="pages__follow-like-info">
+                            <img src="/pages/img-pages/ParanormalGT.jpg" alt="GT">
+                            <div class="pages__follow-like-text">
+                                <h4>Paranormal GT</h4>
+                                <span>Blog personal</span>
+                            </div>
+                            <div class="pages__like-pages-changes-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        
+                        <label for="a">
+                            <div class="pages__follow-like-button">
+                                <div>
+                                    <p>Enviar mensaje</p>
+                                </div>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
+                        </label>
+                    </div>
+
+                    
+
+                    
+
+
+                </div>
+                
+
+            </div>
+        </div>   
+    </div>
+</body>
+</html>
+

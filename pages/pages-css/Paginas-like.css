@@ -1,0 +1,291 @@
+
+.content_likepages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;  
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+/*-------------------------------------paginas que modificaron su nombre*/
+.pages__like-changes{
+    width: 900px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pages__like-changes-pages{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pages__like-changes-text{
+    margin: 0 40px;
+    
+}
+
+.pages__like-pages-changes{
+    width: 410px;
+    height: 119px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    margin: 5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.pages__like-pages-changes input{
+    display: none;
+
+}
+
+.pages__like-pages-changes img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.pages__like-pages-changes img:hover{
+    background-color: dimgrey;
+    z-index: 50px;
+}
+
+.pages__like-pages-changes-text p{
+    font-size: 15px;
+    font-weight:520;
+}
+
+.pages__like-pages-changes-text span{
+    font-weight: 200;
+}
+
+
+
+.pages__like-changes-more-perfil-button{
+    height: 40px;
+    width: 836px;
+    background-color:  #e4e6eb;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pages__like-changes-more-perfil-button p{
+    margin: 0 5px;
+    font-weight:600;
+}
+
+.pages__like-changes-more-perfil-button:hover{
+    background-color: #d8dadf;
+}
+
+/*-------------------------------------paginas que sigues o te gustan*/
+.pages__follow{
+    width: 900px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    
+}
+
+.pages__follow-head {
+    display: flex;
+    align-items: center; 
+    margin: 20px;
+}
+
+.pages__follow-head h3 {
+    margin: 0; 
+}
+
+.pages__follow-head span {
+    margin:0 0 0 300px; 
+    color: #0866ff;
+}
+
+/*contenedor de los perfiles seguidos*/
+.pages__follow-like{
+    width: 414px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; 
+    margin: 10px;
+}
+
+.pages__follow-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual tamaño */
+    gap: 10px;
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+.pages__follow-like-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.pages__follow-like-text{
+    margin: 0 90px 0 0;
+}
+
+.pages__follow-like-info img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 20px 0;
+    cursor: pointer;
+}
+
+.pages__follow-like-button{
+    background-color: #EBf5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 302px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.pages__follow-like-button:hover{
+    background-color: #cbd3db ;
+}
+
+.pages__follow-like-button p{
+    margin: 0 10px;
+    font-weight: 600;
+    color: #0866ff;
+}
+
+.pages__follow-like-button i {
+    color: #0064D1;
+    cursor: pointer;
+}
+
+/* contenido de los 3 puntos pagina de cambios en las paginas*/
+.invitaciones__header{
+    height: 288px;
+    width: 344px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 20%;
+    left: 60%;
+}
+
+.pages__follow-like-options-icon{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pages__follow-like-options-icon:hover{
+    background-color: lightgray;
+}
+
+.pages__follow-like-options-icon p{
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.pages__follow-like-options-icon svg{
+    fill:dimgray ;
+}
+
+#swich-invitaciones__header:checked ~ .invitaciones__header {
+    display: block;
+}    
+
+/*orden de las paginas que te gustan o sigues */
+.order__pages-like-config{
+    width: 290px;
+    height: 132px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 64%;
+    left: 65%;
+}
+
+.order__pages-like-config-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+#swich3_order__pages-like:checked ~ .order__pages-like-config {
+    display: block;
+}
+
+.pages__follow-head input{
+    display: none;
+}
+
+
+
+
+
+
+@media(max-width:900px){
+    .pages__follow-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pages__like-changes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:600px){
+    .pages__follow{
+        display: none;
+    }
+    .pages__like-changes{
+        display: none;
+    }
+}
