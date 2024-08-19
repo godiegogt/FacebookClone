@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/video/css/video_inicio.css">
+    <link rel="icon" href="/src/img/fbicon.png" type="image/icon type">
+    <title>Facebook | Video</title>
+</head>
+<header>
+    <div class="header-top">
+        <img src="/src/img/Facebook-Logo-768x432.png" alt="FACEBOOK">
+        <div>
+            <div class="header-top-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-top-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="header-left">
+            <div class="fbIconContainer">
+                <img class="fbicon" src="/src/img/fbicon.png" />
+            </div>
+            <div class="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Buscar en Facebook" />
+            </div>
+        </div>
+        <div class="menu">
+            
+            <input type="radio" id="menu-item-home" name="menu-radioinput">
+            <label for="menu-item-home" onclick="location.href='/index.html';">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+            </label>
+            
+            <input type="radio" id="menu-item-pages" name="menu-radioinput">
+            <label for="menu-item-pages">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-flag"></i>
+                </div>
+            </label>
+            <input type="radio" id="menu-item-videos" name="menu-radioinput" checked>
+            <label for="menu-item-videos" class="menu-input">
+
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+
+            </label>
+            <input type="radio" id="menu-item-store" name="menu-radioinput">
+            <label for="menu-item-store" class="menu-input">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+            </label>
+            <input type="radio" id="menu-item-games" name="menu-radioinput">
+            <label for="menu-item-games" class="menu-input">
+                <div class="buttonItem button-item-selected">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+
+            </label>
+
+        </div>
+        <div class="navbar">
+            <div class="navBarItem">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e8eaed">
+                    <path
+                        d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z" />
+                </svg>
+            </div>
+            <div class="navBarItem">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <div class="notification">
+                    <p>2</p>
+                </div>
+            </div>
+            <div class="navBarItem">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <img class="avatar" src="/src/img/chuwaca.png" alt="FOto de perfil.">
+        </div>
+        <div class="navBarMore">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="pages__sidebar">
+        <div class="sidebar__header">
+            <h1>Vídeo</h1>
+            <input type="checkbox" id="see-sidebar-config" name="see-sidebar-config">
+            <label for="see-sidebar-config">
+                <div><i class="fa-solid fa-gear"></i></div>
+            </label>
+        </div>
+        <div class="sidebar__config">
+            <div class="sidebar__config-text">
+                <h3>Configuración de notificaciones </h3>
+                <p>puedes administrar cómo recibes las notificaciones sobre laas novedades de páginas</p>
+            </div>
+            <hr></hr>
+            <div class="sidebar__config-options">
+                <div class="sidebar__config-options-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-240h640v-320H520v-160H160v480Zm0 80q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80v-480 480Z"/></svg>
+                </div>
+                <p>
+                    Mostrar puntos de notificaciones
+                </p>
+                <input type="checkbox" id="swich_sidebar__config" name="swich" checked>
+                <label for="swich_sidebar__config">
+                    <div class="sidebar__config-options-swich">
+                        <span class="sidebar__config-options-swich-slider"></span>
+                    </div>
+
+                </label>
+                
+            </div>
+            <div class="sidebar__config-options">
+                <div class="sidebar__config-options-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <p>
+                    notificaciones personalizadas
+                </p>
+            </div>
+        </div>
+        <div class="sidebar__search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Buscar vídeos" />
+        </div>
+        <input type="radio" id="view-1" name="view-input" checked>
+        <label for="view-1" onclick="location.href='/video/html/video_inicio.html';">
+            <div class="sidebar__views">
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h2>Inicio</h2>
+            </div>
+        </label>
+        <input type="radio" id="view-2" name="view-input">
+        <label for="view-2" onclick="location.href='/video/html/video_live.html';">
+            <div class="sidebar__views">
+                <div>
+                    <i class="fa-solid fa-circle-play"></i>
+                </div>
+                <h2>En vivo</h2>
+            </div>
+        </label>
+        <input type="radio" id="view-3" name="view-input">
+        <label for="view-3">
+            <div class="sidebar__views">
+                <div>
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+                <h2>Reels</h2>
+            </div>
+        </label>
+        <input type="radio" id="view-4" name="view-input">
+        <label for="view-4" onclick="location.href='/video/html/video_programas.html';">
+            <div class="sidebar__views">
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                </div>
+                <h2>Programas</h2>
+            </div>
+        </label>
+        <input type="radio" id="view-5" name="view-input">
+        <label for="view-5" onclick="location.href='/video/html/video_explorar.html';">
+            <div class="sidebar__views">
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h2>Explorar</h2>
+            </div>
+        </label>
+        <input type="radio" id="view-6" name="view-input">
+        <label for="view-6" onclick="location.href='/video/html/video_guardados.html';">
+            <div class="sidebar__views">
+                <div>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <h2>Videos guardados</h2>
+            </div>
+        </label>
+    </div>
+    <div class="pages__header">
+        <div class="pages__header__left">
+            <h2>Vídeo</h2>
+            <label for="pages__header__options-input">
+                <div class="pages__header__options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </label>
+            <input type="checkbox" id="pages__header__options-input" name="pages__header__options-input">
+            <div class="pages__header__dropdown">
+                <input type="radio" id="header_view-1" name="header_view" checked>
+                <label for="header_view-1" onclick="location.href='/video/html/video_inicio.html';">
+                    <div class="pages__header__dropdown__views">
+                        <h3>Inicio</h3>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+                <input type="radio" id="header_view-2" name="header_view">
+                <label for="header_view-2" onclick="location.href='/video/html/video_live.html';">
+                    <div class="pages__header__dropdown__views">
+                        <h3>En vivo</h3>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+                <input type="radio" id="header_view-3" name="header_view">
+                <label for="header_view-3">
+                    <div class="pages__header__dropdown__views">
+                        <h3>Reels</h3>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+                <input type="radio" id="header_view-4" name="header_view">
+                <label for="header_view-4" onclick="location.href='/video/html/video_programas.html';">
+                    <div class="pages__header__dropdown__views">
+                        <h3>Programas</h3>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+                <input type="radio" id="header_view-5" name="header_view">
+                <label for="header_view-5" onclick="location.href='/video/html/video_explorar.html';">
+                    <div class="pages__header__dropdown__views">
+                        <h3>Explorar</h3>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+                <input type="radio" id="header_view-6" name="header_view">
+                <label for="header_view-6" onclick="location.href='/video/html/video_guardados.html';">
+                    <div class="pages__header__dropdown__views">
+                        <h3>Videos guardados</h3>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="pages__header__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div class="post-cart">
+            <div class="post-cart__header">
+                <div class="post-cart__header__left">
+                    <img src="/src/img/chuwaca.png" alt="Chuwaka">
+                    <div class="post-cart__header__left__information">
+                        <div class="post-cart__header__left__information__user">
+                            <a href="link">Chuwaka</a>
+                            <p>∙</p>
+                            <a href="link" id="post-follow">Seguir</a>
+                        </div>
+                        <div class="post-cart__header__left__information__date">
+                            <a href="link">10 de marzo</a>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-cart__header__options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="post-cart__body">
+                <p>🎵 Somewhere on Kamino 🎵</p>
+                <video loop autoplay controls src="/src/img/Somewhere on Kamino - Star wars AI Cover.mp4"></video>
+            </div>
+            <div class="post-cart__footer">
+                <div class="post-cart__footer__interactions">
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>Me gusta</p>
+                    </div>
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>Comentar</p>
+                    </div>
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p>Compartir</p>
+                    </div>
+                </div>
+                <div class="post-cart__footer__information">
+                    <p>👍</p>
+                    <a href="link">100 mil</a>
+                    <p>∙</p>
+                    <a href="link">666 comentarios</a>
+                    <p>∙</p>
+                    <a href="link">5,8 mil. reproducciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-cart">
+            <div class="post-cart__header">
+                <div class="post-cart__header__left">
+                    <img src="/src/img/chuwaca.png" alt="Chuwaka">
+                    <div class="post-cart__header__left__information">
+                        <div class="post-cart__header__left__information__user">
+                            <a href="link">Chuwaka</a>
+                            <p>∙</p>
+                            <a href="link" id="post-follow">Seguir</a>
+                        </div>
+                        <div class="post-cart__header__left__information__date">
+                            <a href="link">10 de marzo</a>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-cart__header__options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="post-cart__body">
+                <p>🎵 Somewhere on Kamino 🎵</p>
+                <video loop controls src="/src/img/Somewhere on Kamino - Star wars AI Cover.mp4"></video>
+            </div>
+            <div class="post-cart__footer">
+                <div class="post-cart__footer__interactions">
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>Me gusta</p>
+                    </div>
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>Comentar</p>
+                    </div>
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p>Compartir</p>
+                    </div>
+                </div>
+                <div class="post-cart__footer__information">
+                    <p>👍</p>
+                    <a href="link">100 mil</a>
+                    <p>∙</p>
+                    <a href="link">666 comentarios</a>
+                    <p>∙</p>
+                    <a href="link">5,8 mil. reproducciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-cart">
+            <div class="post-cart__header">
+                <div class="post-cart__header__left">
+                    <img src="/src/img/chuwaca.png" alt="Chuwaka">
+                    <div class="post-cart__header__left__information">
+                        <div class="post-cart__header__left__information__user">
+                            <a href="link">Chuwaka</a>
+                            <p>∙</p>
+                            <a href="link" id="post-follow">Seguir</a>
+                        </div>
+                        <div class="post-cart__header__left__information__date">
+                            <a href="link">10 de marzo</a>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-cart__header__options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="post-cart__body">
+                <p>🎵 Somewhere on Kamino 🎵</p>
+                <video loop controls src="/src/img/Somewhere on Kamino - Star wars AI Cover.mp4"></video>
+            </div>
+            <div class="post-cart__footer">
+                <div class="post-cart__footer__interactions">
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>Me gusta</p>
+                    </div>
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>Comentar</p>
+                    </div>
+                    <div class="post-cart__footer__interactions__buttons">
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p>Compartir</p>
+                    </div>
+                </div>
+                <div class="post-cart__footer__information">
+                    <p>👍</p>
+                    <a href="link">100 mil</a>
+                    <p>∙</p>
+                    <a href="link">666 comentarios</a>
+                    <p>∙</p>
+                    <a href="link">5,8 mil. reproducciones</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<body>
+    
+</body>
+</html>
