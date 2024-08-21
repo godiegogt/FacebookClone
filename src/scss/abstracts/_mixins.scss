@@ -1,0 +1,21 @@
+@mixin reponse($dimension){
+
+    @if ($dimension>=0 and $dimension<=900){
+        @media (0px <= width <= 600px ) {
+            @content
+        }
+    };
+    @if  ($dimension>600 and $dimension<=900){
+        @media (600px < width <= 900px) {
+            @content
+        }
+    };
+
+    @if  ($dimension>900 and $dimension<=1200){
+        @media (900px < width <= 1200px) {
+            @content
+        }
+    }
+
+
+}

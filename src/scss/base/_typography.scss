@@ -1,0 +1,25 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    /* Set a base font size */
+    line-height: 1.5;
+    /* Set a base line height */
+    color: #333;
+    /* Set a base text color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    /* Set font weight for headings */
+}
+
+p {
+    margin-bottom: 1em;
+    /* Set space below paragraphs */
+}

@@ -1,0 +1,250 @@
+@import '../abstracts/mixins';
+
+header {
+
+    -webkit-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.75);
+
+    .header-top {
+        padding: 0 1rem 0 1rem;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & img {
+            width: 100px;
+        }
+
+        &>div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        & .header-top-button {
+            background-color: #f0f0f0;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            margin: 0 5px;
+        }
+    }
+
+    .header-bottom {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        height: 4rem;
+    }
+
+
+
+
+    .header-left {
+        margin: 0.5rem 1rem;
+
+        & .fbIconContainer {
+            display: inline-block;
+            vertical-align: middle;
+
+            & .fbicon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        & .searchBar {
+            display: inline-block;
+            background-color: #f0f0f0;
+            border-radius: 1.5rem;
+            height: 3rem;
+            padding: 1rem;
+            width: 16rem;
+
+            & i {
+                color: #a0a0a0;
+            }
+
+            & input {
+                background-color: transparent;
+                border: 0px none transparent;
+                outline: none;
+            }
+
+            @include reponse(900){
+                & {
+                    width: 50px;
+                    border-radius: 50%;
+                }
+                & input{
+                    display: none;
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .buttonItem {
+            width: 80px;
+            cursor: pointer;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: #f0f0f0;
+            }
+
+            & i {
+                color: #a0a0a0;
+                ;
+            }
+        }
+
+        & input {
+            display: none;
+
+            &:checked+label div {
+                border-bottom: 3px solid #0866ff;
+            }
+        }
+
+
+
+
+        .button-item-selected {
+            border-bottom: 3px solid transparent;
+        }
+
+
+
+    }
+
+    .navBarItem {
+        background-color: #f0f0f0;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin: 0 5px;
+        border-radius: 15px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
+
+    .navBarItem svg {
+        vertical-align: middle;
+        fill: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .navBarItem i {
+        vertical-align: middle;
+
+    }
+
+    .navBarItem .notification {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: red;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navBarItem .notification p {
+
+        color: white;
+        font-weight: bold;
+        font-size: 0.5rem;
+        vertical-align: middle;
+        margin: 0px auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 1rem;
+    }
+
+    .navBarMore {
+        background-color: #f0f0f0;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        vertical-align: middle;
+
+    }
+
+    @include reponse(600){
+      
+            .header-top{
+                display: flex;
+            }
+            .header-bottom{
+                padding-top: 0;
+            }
+            .header-left{
+                display: none;
+            }
+            .navBarMore{display: none;}
+            .menu{
+                width: 100%;
+            }
+       
+    }
+
+    @include reponse(900){
+        .navbar{
+            display: none;
+        }
+        .navBarMore{
+            display: flex;
+        }
+    }
+
+    
+
+
+}
+
